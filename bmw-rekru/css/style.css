@@ -17,17 +17,9 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Nav Styling */
 
-.nav_burger {
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 8vh;
-    padding: 2em;
-    position: relative;
-}
+
+/* Nav Styling */
 
 ul {
     list-style-type: none;
@@ -63,9 +55,13 @@ a:hover::after {
 }
 
 /* Burger Styling */
+.burger_logo {
+    margin: 20px;
+}
 
 .burger {
     background: transparent;
+    position: relative;
     border: none;
     outline: none;
     cursor: pointer;
@@ -107,8 +103,7 @@ a:hover::after {
         position: absolute;
         gap: 100px;
         right: 0;
-        top: 8vh;
-        height: 92vh;
+        height: 100vh;
         text-align: center;
         transform: translate(100%);
         transition: .3s ease-in-out;
@@ -122,7 +117,8 @@ a:hover::after {
         height: 46px;
         font-size: 14px;
     }
-    .test_drive_text{
+
+    .test_drive_text {
         display: flex;
         justify-content: center;
         padding: 10px 60px;
@@ -134,10 +130,10 @@ a:hover::after {
         transform: translate(0%);
     }
 
-    a {
+    .burger_text {
         color: #FFFFFF;
         font-size: 16px;
-        letter-spacing: 2px;
+        letter-spacing: 1.5px;
     }
 }
 
