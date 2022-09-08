@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600;700&family=Open+Sans:wght@300&family=Roboto:wght@300;400&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -10,7 +11,7 @@ html {
 }
 
 body {
-    height: 300vh;
+    height: 500vh;
 }
 
 /* Nav Styling */
@@ -414,6 +415,14 @@ a:hover::after {
         font-size: 24px;
         font-family: 'Cairo', sans-serif;
         line-height: 26px;
+
+    }
+
+    .bmw_text_ix:after {
+        content: url("/images/ico_2.svg");
+        position: relative;
+        bottom: 90px;
+        margin-left: -85px;
     }
 
     .first_text_bmw {
@@ -421,14 +430,59 @@ a:hover::after {
         font-family: 'Open Sans', sans-serif;
         color: #707070;
     }
-    .secondary_text_bmw{
-        color:#4E4E4E ;
+
+    .secondary_text_bmw {
+        color: #4E4E4E;
         font-family: 'Roboto', sans-serif;
         font-size: 13px;
         line-height: 24px;
     }
 
     /*sekcja 3 */
+    /*sekcja 4*/
+    .five_img_bmw {
+        flex-wrap: wrap;
+        position: relative;
+        top: 900px;
+        gap: 5px;
+        margin: 5px;
+    }
+
+    .first_img_bmw {
+        width: 100%;
+    }
+
+    .first_two_img {
+        display: flex;
+        gap: 5px;
+    }
+
+    .second_img_bmw {
+        flex-grow: 1;
+        width: 30%;
+    }
+
+    .thrid_img_bmw {
+        flex-grow: 3;
+        width: 100px;
+    }
+
+    .secondary_two_img {
+        display: flex;
+        gap: 5px;
+        margin-top: 5px;
+    }
+
+    .fourth_img_bmw {
+        width: 50%;
+    }
+
+    .fivth_img_bmw {
+        width: 50%;
+        height: 150px;
+    }
+
+    /*sekcja 4 */
 }
 
 @media only screen and (max-width: 760px) {
