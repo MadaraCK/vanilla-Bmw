@@ -483,6 +483,50 @@ a:hover::after {
     }
 
     /*sekcja 4 */
+    /*sekcja 5 */
+    .test_dive_img {
+        position: relative;
+        top: 950px;
+
+    }
+
+    .hide_gold_bmw {
+        position: relative;
+        left: -160px;
+        margin-bottom: 60px;
+    }
+
+    .test_drive_text_ix {
+        display: flex;
+        justify-content: center;
+        font-family: 'Cairo', sans-serif;
+        font-weight: bold;
+    }
+    .test_drive_text_ix:before{
+        content: 'BMW iX';
+        position: absolute;
+        left: 390px;
+        margin-top: 8px;
+        font-size: 13px;
+    }
+    .both_text_drive{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 350px;
+        color: #707070;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .first_text_drive{
+        margin-left: 58px;
+    }
+    .secondary_text_drive{
+        margin-top: 20px;
+        margin-left: 58px;
+    }
+
+    /*sekcja 5 */
 }
 
 @media only screen and (max-width: 760px) {
@@ -491,8 +535,16 @@ a:hover::after {
     }
 }
 
-@media only screen and (min-width: 340px) {
+@media only screen and (max-width: 340px) {
     .test_drive_button {
         left: 39px;
+    }
+    .test_drive_text_ix:before{
+        content: 'BMW iX';
+        position: absolute;
+        left: 300px;
+        line-height: 10px;
+        margin-top: 15px;
+        font-size: 13px;
     }
 }
