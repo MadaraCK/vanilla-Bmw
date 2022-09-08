@@ -527,6 +527,14 @@ a:hover::after {
     }
 
     /*sekcja 5 */
+    /*sekcja 6 */
+    .form_box{
+        position: relative;
+        top: 1000px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /*sekcja 6 */
 }
 
 @media only screen and (max-width: 760px) {
@@ -535,16 +543,19 @@ a:hover::after {
     }
 }
 
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 400px) {
     .test_drive_button {
         left: 39px;
     }
     .test_drive_text_ix:before{
-        content: 'BMW iX';
-        position: absolute;
-        left: 300px;
+        left: 320px;
         line-height: 10px;
         margin-top: 15px;
-        font-size: 13px;
+    }
+    .first_text_drive{
+        margin-left: 55px;
+    }
+    .secondary_text_drive{
+        margin-left: 55px;
     }
 }
