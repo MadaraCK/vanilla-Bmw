@@ -307,6 +307,7 @@ a:hover::after {
     .img_box_facts {
         display: flex;
         gap: 10px;
+        justify-content: space-around;
     }
 
     .foto_car1 {
@@ -383,7 +384,7 @@ a:hover::after {
     .img_box_facts_v2{
         margin-top: 50px;
         display: flex;
-        gap: 10px;
+        justify-content: space-around;
     }
     .white_bmw_img1{
         width: 240px;
