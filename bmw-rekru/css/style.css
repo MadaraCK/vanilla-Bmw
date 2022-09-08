@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 * {
     padding: 0;
@@ -8,6 +9,10 @@
 
 html {
     overflow-x: hidden;
+}
+
+body {
+    height: 300vh;
 }
 
 /* Nav Styling */
@@ -73,6 +78,36 @@ a {
     display: none;
 }
 
+.new_bmw_logo {
+    z-index: 1;
+    position: relative;
+    top: 30px;
+    font-size: 48px;
+    color: white;
+    font-family: 'Cairo', sans-serif;
+    left: 20px;
+}
+
+.text_bmw {
+    color: #D6D6D6;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+
+
+.test_drive_button {
+    position: relative;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.test_drive_button:hover {
+    scale: 1.01;
+
+}
+
 a::after {
     content: '';
     position: absolute;
@@ -112,24 +147,27 @@ a:hover::after {
     border-radius: 20px;
     transition: .3s ease-in-out;
 }
-
+.slide_track_v2{
+    display: none;
+}
 @media only screen and (max-width: 1000px) {
     .desktop_text {
         display: none;
     }
-    .img_logo_bmw{
+
+    .img_logo_bmw {
         margin-right: 20px;
     }
 
     .new_bmw_logo {
         z-index: 1;
         position: relative;
-        top: 400px;
+        top: 250px;
     }
 
     .burger {
         z-index: 2;
-        margin-top: -128px;
+        margin-top: -285px;
         display: block;
         transition: .3s ease-in-out;
     }
@@ -140,13 +178,28 @@ a:hover::after {
         top: 20px;
     }
 
+    .new_bmw {
+        font-size: 48px;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 165px;
+        line-height: 55px;
+    }
+
+    .test_drive_button {
+        top: 600px;
+        left: 150px;
+        padding: 10px 60px;
+        background: #3369D3;
+        border: none;
+        font-family: 'Cairo', sans-serif;
+        font-size: 14px;
+        color: white;
+    }
+
     .mobile_text {
         display: block;
     }
-
-    /*.menu {*/
-    /*    background-image: url("/images/slider1.png");*/
-    /*}*/
     .burger.active .line:first-child {
         transform: translateY(-300px);
     }
@@ -202,10 +255,45 @@ a:hover::after {
         letter-spacing: 1.5px;
         text-transform: uppercase;
     }
+    /*zmiana zdjecia*/
+
+    .slider_v2x {
+        position: absolute;
+        filter: brightness(50%);
+    }
+
+
+    .slide_track_v2x {
+        display: flex;
+        animation: scroll 12s normal infinite;
+    }
+
+    .imgslide_v2x {
+        width: 100%;
+
+    }
+    .slide_v2x{
+        height: 1000px;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+    }
+    .imgslide_v2{
+        width: 100vw;
+        height: 720px;
+    }
+    /*zmiana zdjecia*/
+
 }
 
 @media only screen and (max-width: 760px) {
     ul {
         width: 100%;
+    }
+}
+
+@media only screen and (min-width: 340px) {
+    .test_drive_button {
+        left: 39px;
     }
 }
