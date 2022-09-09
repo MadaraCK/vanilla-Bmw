@@ -13,12 +13,6 @@ html {
 
 /* Nav Styling */
 
-.img_logo_bmw {
-    z-index: 2;
-    position: absolute;
-    right: 30px;
-    top: 20px;
-}
 
 ul {
     list-style-type: none;
@@ -36,14 +30,19 @@ a {
     color: #FFFFFF;
 }
 
+/*.popup{*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    bac*/
+/*}*/
 .slider {
     position: absolute;
-    filter: brightness(50%);
+    filter: brightness(40%);
 }
 
 .slide_track {
     display: flex;
-    /*animation: scroll 8s normal infinite;*/
+    animation: scroll 8s normal infinite;
 }
 
 @keyframes scroll {
@@ -65,6 +64,16 @@ a {
     align-items: center;
 }
 
+/*.popup{*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    position: relative;*/
+
+/*    background-color: black;*/
+/*}*/
+/*.popup_none{*/
+/*    display: none;*/
+/*}*/
 .imgslide {
     width: 100vw;
     height: 1000px;
@@ -100,7 +109,6 @@ a {
 
 .test_drive_button:hover {
     scale: 1.01;
-
 }
 
 a::after {
@@ -147,28 +155,177 @@ a:hover::after {
     display: none;
 }
 
-/*sekcja 2 */
-.facts_bmw {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
+@media only screen and (min-width: 1400px) {
+    .facts_bmw {
+        top: 500px;
+        position: relative;
+    }
 
-/*sekcja 2 */
-@media only screen and (max-width: 1000px) {
-    .desktop_text {
-        display: none;
+    .facts_bmw_text {
+        display: flex;
+        justify-content: center;
+    }
+
+    .img_box_facts {
+        margin-left: 50px;
+    }
+
+    .foto_car1 {
+        position: relative;
+        top: 80px;
+        width: 320px;
+        height: 320px;
+    }
+
+    .foto_car2 {
+        width: 536px;
+        height: 536px;
+        margin-left: 10px;
+    }
+
+    .main_text_before {
+        position: relative;
+        left: 600px;
+        bottom: 490px;
+        font-size: 36px;
+        font-family: 'Cairo', sans-serif;
+        max-width: 305px;
+        line-height: 40px;
+    }
+
+    .text_about_bmw {
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+        color: #4E4E4E;
+        line-height: 24px;
+    }
+
+    .main_text_before:before {
+        position: absolute;
+        top: -50px;
+        content: url("/images/ico_1.svg");
+    }
+
+    .about_car {
+        position: relative;
+        max-width: 635px;
+        justify-content: right;
+        left: 300px;
+        bottom: 300px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .conainer_about_car {
+        position: relative;
+        bottom: 90px;
+        right: 130px;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 150px;
+        justify-content: left;
+        gap: 20px;
+        margin-right: 20px;
+        margin-top: 60px;
+    }
+    .conainer_about_car_fail{
+        right: 300px;
+    }
+
+    .number_with_after {
+        font-size: 12px;
+        font-family: 'Cairo', sans-serif;
+        font-weight: bold;
+    }
+
+    .nav_desk {
+        display: flex;
+        margin: 30px -50px 0 250px;
+        font-size: 18px;
+        font-family: 'Cairo', sans-serif;
+        letter-spacing: 2px;
+    }
+
+    .test_drive_text {
+        margin-left: -390px;
     }
 
     .img_logo_bmw {
-        margin-right: 20px;
+        top: 40px;
+        width: 40px;
+        height: 40px;
+        right: 300px;
+        position: absolute;
+    }
+
+    .desktop_text {
+        position: absolute;
+        right: 360px;
+        top: 100px;
+        font-size: 16px;
+        font-family: 'Cairo', sans-serif;
+    }
+
+    .new_bmw_logo {
+        left: 340px;
+        margin-top: 230px;
+        font-size: 64px;
+    }
+
+    .new_bmw_logo > img {
+        width: 88px;
+        height: 48px;
+    }
+
+    .new_bmw {
+        margin-top: -50px;
+        text-transform: uppercase;
+    }
+
+    .line_desktop {
+        height: 1px;
+        width: 1000px;
+        color: gray;
+        position: absolute;
+    }
+
+    .text_bmw {
+        margin-top: -10px;
+        margin-left: 5px;
+        font-weight: 600;
+    }
+
+    .test_drive_button {
+        padding: 10px 60px;
+        background: #3369D3;
+        border: none;
+        font-family: 'Cairo', sans-serif;
+        font-size: 18px;
+        left: 980px;
+        position: absolute;
+        bottom: 70px;
+        color: white;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .desktop_text {
+        display: none;
     }
 
     .new_bmw_logo {
         z-index: 1;
         position: relative;
         top: 250px;
+    }
+
+    .img_logo_bmw {
+        z-index: 2;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        margin-right: 20px;
     }
 
     .burger {
@@ -178,11 +335,6 @@ a:hover::after {
         transition: .3s ease-in-out;
     }
 
-    .img_logo_bmw {
-        position: absolute;
-        right: 10px;
-        top: 20px;
-    }
 
     .new_bmw {
         font-size: 48px;
@@ -297,6 +449,7 @@ a:hover::after {
     .facts_bmw {
         position: relative;
         top: 700px;
+
     }
 
     .img_box_facts {
@@ -321,7 +474,7 @@ a:hover::after {
 
     .main_text_before {
         font-weight: bold;
-        margin-left: 20px;
+        margin-left: 40px;
         min-width: 200px;
         font-size: 24px;
         font-family: 'Cairo', sans-serif;
@@ -337,17 +490,10 @@ a:hover::after {
     .about_car {
         position: relative;
         top: 100px;
-        right: 250px;
+        right: 220px;
         flex-wrap: wrap;
         width: 296px;
-    }
-
-    .bmw_fail {
-        margin-left: -80px;
-    }
-
-    .bmw_fail2 {
-        margin-left: -40px;
+        margin-bottom: 50px;
     }
 
     .conainer_about_car {
@@ -384,6 +530,9 @@ a:hover::after {
         margin-top: 50px;
         display: flex;
         justify-content: space-around;
+    }
+    .text_bmw_all_fail{
+        min-width: 150px;
     }
 
     .white_bmw_img1 {
