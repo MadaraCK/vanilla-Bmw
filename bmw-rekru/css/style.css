@@ -633,16 +633,16 @@ a:hover::after {
         margin-left: 15px;
     }
     .sticky_pop{
-        top: 350px;
+        top: 300px;
         margin-left: 120px;
         font-family: 'Cairo', sans-serif;
     }
     .popv1{
-        top: 400px;
+        top: 350px;
         margin-left: 115px;
     }
     .popv2{
-        top: 424px;
+        top: 374px;
         margin-left: 94px;
     }
     .popv1,
@@ -650,7 +650,7 @@ a:hover::after {
         font-size: 13px;
     }
     .close_popup{
-        top: 510px;
+        top: 440px;
         margin-left: 115px;
     }
 
