@@ -18,7 +18,35 @@ ul {
     width: 55%;
     justify-content: space-around;
 }
-
+.remove_pop{
+    display: none;
+}
+.popup{
+    width: 1000vw;
+    height: 1000vh;
+    opacity: 90%;
+    background-color: black;
+    position: absolute;
+    z-index: 3;
+    font-family: 'Roboto', sans-serif;
+}
+.sticky_pop{
+    top: auto;
+    position: sticky;
+    color: white;
+    z-index: 4;
+}
+.close_popup{
+    position: sticky;
+    background-color: #3369D3;
+    z-index: 5;
+    width: 138px;
+    height: 46px;
+    color: white;
+    font-family: 'Cairo', sans-serif;
+    font-size: 14px;
+    border: none;
+}
 a {
     text-decoration: none;
     font-size: 1.7rem;
@@ -27,6 +55,7 @@ a {
     padding: .2em;
     color: #FFFFFF;
 }
+
 
 .slider {
     position: absolute;
@@ -125,9 +154,9 @@ a:hover::after {
 
 .line {
     width: 3em;
-    height: .3em;
-    background: white;
-    margin: .7em;
+    height: .2em;
+    background: #858585;
+    margin: .8em;
     border-radius: 20px;
     transition: .3s ease-in-out;
 }
@@ -482,7 +511,6 @@ a:hover::after {
         padding: 8px;
         font-size: 20px;
         color: #707070;
-
     }
 
     .label_choose_margin {
@@ -597,23 +625,46 @@ a:hover::after {
         display: none;
     }
 
+
     .new_bmw_logo {
         z-index: 1;
         position: relative;
-        top: 250px;
+        top: 140px;
+        margin-left: 15px;
+    }
+    .sticky_pop{
+        top: 350px;
+        margin-left: 120px;
+        font-family: 'Cairo', sans-serif;
+    }
+    .popv1{
+        top: 400px;
+        margin-left: 115px;
+    }
+    .popv2{
+        top: 424px;
+        margin-left: 94px;
+    }
+    .popv1,
+    .popv2{
+        font-size: 13px;
+    }
+    .close_popup{
+        top: 510px;
+        margin-left: 115px;
     }
 
     .img_logo_bmw {
         z-index: 2;
         position: absolute;
         right: 10px;
-        top: 20px;
+        top: 24px;
         margin-right: 20px;
     }
 
     .burger {
         z-index: 2;
-        margin-top: -285px;
+        margin-top: -278px;
         display: block;
         transition: .3s ease-in-out;
     }
@@ -627,18 +678,35 @@ a:hover::after {
     }
 
     .test_drive_button {
-        top: 380px;
-        left: 150px;
+        top: 350px;
         padding: 10px 60px;
         background: #3369D3;
         border: none;
         font-family: 'Cairo', sans-serif;
         font-size: 14px;
         color: white;
+        margin-left: 20px;
+    }
+    .box_line_button{
+        display: flex;
+        justify-content: center;
+    }
+    .line_under_button:nth-child(1){
+        background-color: #3369D3;
+    }
+    .line_under_button{
+        width: 40px;
+        height: 4px;
+        background-color: white;
+        position: relative;
+        z-index: 1;
+        margin: 5px;
+        top: 400px;
     }
 
     .mobile_text {
         display: block;
+        margin-bottom: 40px;
     }
 
     .burger.active .line:first-child {
@@ -654,20 +722,22 @@ a:hover::after {
     }
 
     .active_burger {
+        top: 50px;
         display: flex;
         justify-content: center;
         flex-direction: column;
         background-color: black;
         position: absolute;
         z-index: 2;
-        gap: 100px;
+        gap: 60px;
         right: 0;
-        height: 98vh;
+        height: 100vh;
         text-align: center;
         transform: translate(100%);
         transition: .3s ease-in-out;
         font-family: 'Cairo', sans-serif;
     }
+
 
     .test_drive {
         margin: 0 auto;
@@ -686,6 +756,7 @@ a:hover::after {
         text-transform: uppercase;
     }
 
+
     .active_burger.active {
         transform: translate(0%);
     }
@@ -695,6 +766,31 @@ a:hover::after {
         font-size: 16px;
         letter-spacing: 1.5px;
         text-transform: uppercase;
+        opacity: 80%;
+    }
+    .line_under_text_brg1:after{
+        content: '';
+        width: 250px;
+        height: 1px;
+        background-color: gray;
+        opacity: 50%;
+        position: absolute;
+        z-index: 1;
+        left: -65px;
+        top: 70px;
+
+    }
+    .line_under_text_brg:after{
+        content: '';
+        width: 250px;
+        height: 1px;
+        background-color: gray;
+        position: absolute;
+        opacity: 50%;
+
+        z-index: 1;
+        top: 70px;
+        left: 50px;
     }
 
     /*zmiana zdjecia*/
@@ -1011,6 +1107,13 @@ a:hover::after {
         letter-spacing: 1px;
         margin-top: 25px;
     }
+    .send_form:after{
+        position: absolute;
+        bottom: 170px;
+        left: 10px;
+        z-index: -1;
+        content: url("/images/Path16.svg");
+    }
 
     .hide_bmw {
         position: relative;
@@ -1053,8 +1156,9 @@ a:hover::after {
         width: 320px;
         height: 1px;
         background: gray;
+        opacity: 40%;
         position: absolute;
-        margin-top: 30px;
+        margin-top: 40px;
         margin-left: -5px;
     }
 
