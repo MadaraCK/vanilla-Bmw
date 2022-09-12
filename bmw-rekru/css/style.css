@@ -18,7 +18,35 @@ ul {
     width: 55%;
     justify-content: space-around;
 }
-
+.remove_pop{
+    display: none;
+}
+.popup{
+    width: 1000vw;
+    height: 1000vh;
+    opacity: 90%;
+    background-color: black;
+    position: absolute;
+    z-index: 3;
+    font-family: 'Roboto', sans-serif;
+}
+.sticky_pop{
+    top: auto;
+    position: sticky;
+    color: white;
+    z-index: 4;
+}
+.close_popup{
+    position: sticky;
+    background-color: #3369D3;
+    z-index: 5;
+    width: 138px;
+    height: 46px;
+    color: white;
+    font-family: 'Cairo', sans-serif;
+    font-size: 14px;
+    border: none;
+}
 a {
     text-decoration: none;
     font-size: 1.7rem;
@@ -27,6 +55,7 @@ a {
     padding: .2em;
     color: #FFFFFF;
 }
+
 
 .slider {
     position: absolute;
@@ -602,6 +631,27 @@ a:hover::after {
         position: relative;
         top: 140px;
         margin-left: 15px;
+    }
+    .sticky_pop{
+        top: 350px;
+        margin-left: 120px;
+        font-family: 'Cairo', sans-serif;
+    }
+    .popv1{
+        top: 400px;
+        margin-left: 115px;
+    }
+    .popv2{
+        top: 424px;
+        margin-left: 94px;
+    }
+    .popv1,
+    .popv2{
+        font-size: 13px;
+    }
+    .close_popup{
+        top: 510px;
+        margin-left: 115px;
     }
 
     .img_logo_bmw {
