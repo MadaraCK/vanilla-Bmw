@@ -18,10 +18,12 @@ ul {
     width: 55%;
     justify-content: space-around;
 }
-.remove_pop{
+
+.remove_pop {
     display: none;
 }
-.popup{
+
+.popup {
     width: 1000vw;
     height: 1000vh;
     opacity: 90%;
@@ -30,13 +32,15 @@ ul {
     z-index: 3;
     font-family: 'Roboto', sans-serif;
 }
-.sticky_pop{
+
+.sticky_pop {
     top: auto;
     position: sticky;
     color: white;
     z-index: 4;
 }
-.close_popup{
+
+.close_popup {
     position: sticky;
     background-color: #3369D3;
     z-index: 5;
@@ -47,6 +51,7 @@ ul {
     font-size: 14px;
     border: none;
 }
+
 a {
     text-decoration: none;
     font-size: 1.7rem;
@@ -107,7 +112,7 @@ a {
 
 .text_bmw {
     color: #D6D6D6;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Cairo', sans-serif;
     font-size: 16px;
     margin-top: 15px;
 }
@@ -165,7 +170,7 @@ a:hover::after {
     display: none;
 }
 
-@media only screen and (max-width: 1920px) {
+@media only screen and (min-width: 1920px) {
     .facts_bmw {
         top: 500px;
         position: relative;
@@ -226,6 +231,27 @@ a:hover::after {
         flex-wrap: wrap;
     }
 
+    .box_line_button {
+        display: flex;
+        justify-content: center;
+    }
+
+    .line_under_button:nth-child(1) {
+        background-color: #3369D3;
+    }
+
+    .line_under_button {
+        width: 60px;
+        height: 5px;
+        background-color: white;
+        position: relative;
+        z-index: 1;
+        margin: 5px;
+        top: 355px;
+        right: 500px;
+        opacity: 80%;
+    }
+
     .conainer_about_car {
         position: relative;
         bottom: 90px;
@@ -274,12 +300,25 @@ a:hover::after {
         letter-spacing: 2px;
     }
 
+    .line_under_text_brg1:after {
+        opacity: 50%;
+        top: 60px;
+        width: 1210px;
+        height: 1px;
+        background-color: gray;
+        position: absolute;
+    }
+
+    .logo_bmw {
+        width: 53px;
+    }
+
     .test_drive_text {
         margin-left: -390px;
     }
 
     .img_logo_bmw {
-        top: 40px;
+        top: 20px;
         width: 40px;
         height: 40px;
         right: 300px;
@@ -303,11 +342,12 @@ a:hover::after {
     .new_bmw_logo > img {
         width: 88px;
         height: 48px;
+        margin-bottom: 10px;
     }
 
     .new_bmw {
+        font-size: 64px;
         margin-top: -50px;
-        text-transform: uppercase;
     }
 
     .line_desktop {
@@ -329,10 +369,11 @@ a:hover::after {
         border: none;
         font-family: 'Cairo', sans-serif;
         font-size: 18px;
-        left: 980px;
+        left: 850px;
         position: absolute;
         bottom: 70px;
         color: white;
+        font-weight: 600;
     }
 
     .img_box_facts_v2 {
@@ -455,7 +496,8 @@ a:hover::after {
         left: 570px;
         width: 600px;
     }
-    .hide_gold_bmw:after{
+
+    .hide_gold_bmw:after {
         content: url("/images/Path16.svg");
         background: #4E4E4E;
         position: relative;
@@ -538,6 +580,7 @@ a:hover::after {
         letter-spacing: 2px;
         text-transform: uppercase;
     }
+
     .input_box_form > input::placeholder {
         font-family: 'Open Sans', sans-serif;
         padding-left: 15px;
@@ -596,20 +639,23 @@ a:hover::after {
 
     }
 
-    .customer_area{
+    .customer_area {
         font-family: 'Roboto', sans-serif;
         color: #707070;
 
     }
+
     .customer_area_text {
         font-weight: lighter;
         margin: 90px 0 30px 0;
     }
-    .text_customer{
+
+    .text_customer {
         font-weight: bold;
         margin-bottom: 15px;
     }
-    .copy_right{
+
+    .copy_right {
         display: flex;
         align-items: center;
         margin-left: 280px;
@@ -635,24 +681,29 @@ a:hover::after {
         top: 140px;
         margin-left: 15px;
     }
-    .sticky_pop{
+
+    .sticky_pop {
         top: 300px;
         margin-left: 120px;
         font-family: 'Cairo', sans-serif;
     }
-    .popv1{
+
+    .popv1 {
         top: 350px;
         margin-left: 115px;
     }
-    .popv2{
+
+    .popv2 {
         top: 374px;
         margin-left: 94px;
     }
+
     .popv1,
-    .popv2{
+    .popv2 {
         font-size: 13px;
     }
-    .close_popup{
+
+    .close_popup {
         top: 440px;
         margin-left: 115px;
     }
@@ -690,14 +741,17 @@ a:hover::after {
         color: white;
         margin-left: 20px;
     }
-    .box_line_button{
+
+    .box_line_button {
         display: flex;
         justify-content: center;
     }
-    .line_under_button:nth-child(1){
+
+    .line_under_button:nth-child(1) {
         background-color: #3369D3;
     }
-    .line_under_button{
+
+    .line_under_button {
         width: 40px;
         height: 4px;
         background-color: white;
@@ -771,7 +825,8 @@ a:hover::after {
         text-transform: uppercase;
         opacity: 80%;
     }
-    .line_under_text_brg1:after{
+
+    .line_under_text_brg1:after {
         content: '';
         width: 250px;
         height: 1px;
@@ -781,9 +836,9 @@ a:hover::after {
         z-index: 1;
         left: -65px;
         top: 70px;
-
     }
-    .line_under_text_brg:after{
+
+    .line_under_text_brg:after {
         content: '';
         width: 250px;
         height: 1px;
@@ -925,8 +980,8 @@ a:hover::after {
         width: 110px;
         height: 110px;
     }
-    /*sekcja 2 */
 
+    /*sekcja 2 */
     /*sekcja 3 */
     .bmw_text {
         margin: 20px;
@@ -962,8 +1017,8 @@ a:hover::after {
         font-size: 13px;
         line-height: 24px;
     }
-    /*sekcja 3 */
 
+    /*sekcja 3 */
     /*sekcja 4*/
     .five_img_bmw {
         flex-wrap: wrap;
@@ -1006,8 +1061,8 @@ a:hover::after {
         width: 50%;
         height: 150px;
     }
-    /*sekcja 4 */
 
+    /*sekcja 4 */
     /*sekcja 5 */
     .test_dive_img {
         position: relative;
@@ -1054,8 +1109,8 @@ a:hover::after {
         margin-top: 20px;
         margin-left: 58px;
     }
-    /*sekcja 5 */
 
+    /*sekcja 5 */
     /*sekcja 6 */
     .form_box {
         position: relative;
@@ -1112,7 +1167,7 @@ a:hover::after {
         padding: 10px 60px;
     }
 
-    .send_form:after{
+    .send_form:after {
         position: absolute;
         bottom: 170px;
         left: 10px;
@@ -1124,8 +1179,8 @@ a:hover::after {
         position: relative;
         left: 70px;
     }
-    /*sekcja 6 */
 
+    /*sekcja 6 */
     /*footer*/
     .foter_bmw {
         top: 1000px;
@@ -1199,6 +1254,7 @@ a:hover::after {
         color: #707070;
         font-size: 14px;
     }
+
     /*footer*/
 }
 
