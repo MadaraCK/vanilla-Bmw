@@ -60,7 +60,9 @@ a {
     padding: .2em;
     color: #FFFFFF;
 }
-
+.text_customer{
+    cursor: pointer;
+}
 
 .slider {
     position: absolute;
@@ -170,9 +172,25 @@ a:hover::after {
     display: none;
 }
 
-@media only screen and (min-width: 1920px) {
+@media only screen and  (min-width: 1620px){
+    .sticky_pop{
+        top: 400px;
+        margin-left: 920px;
+    }
+    .close_popup{
+        top: 580px;
+        margin-left: 925px;
+    }
+    .popv1{
+        top: 455px;
+        margin: 15px 0 10px 900px;
+    }
+    .popv2{
+        top: 483px;
+        margin-left: 875px;
+    }
     .facts_bmw {
-        top: 500px;
+        top: 570px;
         position: relative;
     }
 
@@ -380,7 +398,7 @@ a:hover::after {
     }
 
     .img_box_facts_v2 {
-        bottom: 40px;
+        bottom: 140px;
         position: relative;
         display: flex;
         justify-content: right;
@@ -404,7 +422,6 @@ a:hover::after {
         max-width: 536px;
         flex-wrap: wrap;
         margin-left: 270px;
-        margin-top: 20px;
     }
 
     .bmw_text_ix {
@@ -466,7 +483,7 @@ a:hover::after {
     .secondary_two_img {
         position: absolute;
         right: 10px;
-        top: 3026px;
+        top: 3006px;
     }
 
     .fourth_img_bmw {
@@ -603,6 +620,8 @@ a:hover::after {
         color: #FFFFFF;
         letter-spacing: 2px;
         text-transform: uppercase;
+        cursor: pointer;
+        margin-top: 40px;
     }
 
     .input_box_form > input::placeholder {
@@ -973,7 +992,41 @@ a:hover::after {
         margin-bottom: 20px;
     }
 
-    .number_with_after:before {
+    .number_with_after_v1:before {
+        top: 50px;
+        position: absolute;
+        content: '';
+        width: 300px;
+        height: 1px;
+        background: gray;
+    }
+    .number_with_after_v2:before {
+        top: 150px;
+        position: absolute;
+        content: '';
+        width: 300px;
+        height: 1px;
+        background: gray;
+    }
+    .number_with_after_v3:before {
+        top: 335px;
+        position: absolute;
+        content: '';
+        width: 300px;
+        height: 1px;
+        background: gray;
+    }
+
+    .number_with_after_v4:before {
+        top: 455px;
+        position: absolute;
+        content: '';
+        width: 300px;
+        height: 1px;
+        background: gray;
+    }
+    .number_with_after_v5:before {
+        top: 575px;
         position: absolute;
         content: '';
         width: 300px;
@@ -1031,7 +1084,7 @@ a:hover::after {
         content: url("/images/ico_2.svg");
         position: relative;
         bottom: 90px;
-        margin-left: -85px;
+        margin-left: -90px;
     }
 
     .first_text_bmw {
