@@ -165,7 +165,7 @@ a:hover::after {
     display: none;
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (max-width: 1920px) {
     .facts_bmw {
         top: 500px;
         position: relative;
@@ -524,20 +524,23 @@ a:hover::after {
     .input_box_form > input {
         width: 506px;
         height: 52px;
-        margin-bottom: 30px;
-        padding-left: 20px;
+        margin-bottom: 60px;
     }
 
     .send_form {
+        border: none;
         width: 243px;
         height: 63px;
         background-color: #3369D3;
         font-family: 'Cairo', sans-serif;
         font-size: 18px;
         color: #FFFFFF;
-        border: none;
         letter-spacing: 2px;
         text-transform: uppercase;
+    }
+    .input_box_form > input::placeholder {
+        font-family: 'Open Sans', sans-serif;
+        padding-left: 15px;
     }
 
     .foter_bmw {
@@ -1080,6 +1083,7 @@ a:hover::after {
 
     .checkbox {
         margin-left: 30px;
+
     }
 
     .input_box_form > input {
@@ -1096,17 +1100,18 @@ a:hover::after {
     }
 
     .send_form {
-        width: 165px;
-        height: 45px;
-        background: #3369D3;
         border: none;
-        border-radius: 3px;
+        background: #3369D3;
+        border-radius: 2px;
         color: white;
         font-family: 'Cairo', sans-serif;
         text-transform: uppercase;
         letter-spacing: 1px;
-        margin-top: 25px;
+        font-size: 14px;
+        font-weight: lighter;
+        padding: 10px 60px;
     }
+
     .send_form:after{
         position: absolute;
         bottom: 170px;
